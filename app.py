@@ -6,8 +6,7 @@ import os
 import re
 app = Flask(__name__)
 
-# Optional: set tesseract path if needed
-# pytesseract.pytesseract.tesseract_cmd = r"/usr/bin/tesseract"
+pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
 
 
 def extract_plate(results):
